@@ -51,7 +51,7 @@ main:
 	mov	QWORD PTR -24[rbp], rax # a = fact(k);
 	add	QWORD PTR -16[rbp], 1 	# k++;
 	mov	rax, QWORD PTR -24[rbp] 
-	cmp	rax, QWORD PTR -8[rbp]	a ? b
+	cmp	rax, QWORD PTR -8[rbp]	# a ? b
 	ja	.mainWHILE		# while(a > b)
 	
 	mov	rax, QWORD PTR -16[rbp]
